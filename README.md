@@ -1,24 +1,4 @@
-# first_triplex
+# how to replicate the issue
 
-Thanks for being an early adopter!
-If you find Triplex useful think about [sponsoring the project](https://github.com/sponsors/itsdouges),
-with more sponsors more time can be spent on development.
-
-## Commands
-
-Run the CLI to browse available commands:
-
-```bash
-npx triplex
-```
-
-### Editor
-
-Triplex ships with an embedded editor to visually build out your React Three Fiber components:
-
-```bash
-yarn run editor
-```
-
-Using the `--open [path]` option you can have the editor open in your default browser immediately.
-The optional `[path]` flag opens a specific file.
+Open the scene in Triplex, select NestedComponents element from the side bar, try to translate.
+You should see the cube moving first and the cylinder updating on drag-end. Note that cube and cylinder are siblings into [NestedComponents](https://github.com/Cosmitar/triplex_debug/blob/main/src/components/NestedComponents.tsx) and the props of the component are applied to a wrapper group.
